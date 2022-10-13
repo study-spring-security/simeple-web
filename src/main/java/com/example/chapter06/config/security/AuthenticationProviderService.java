@@ -39,11 +39,11 @@ public class AuthenticationProviderService implements AuthenticationProvider {
                 throw new BadCredentialsException("Bad credentials");
         }
 
-        throw new BadCredentialsException("Bad credentials");
     }
 
-    private Authentication checkPassword(CustomUserDetail user, String password, PasswordEncoder encoder) {
-        if (encoder.matches(user.getPassword(), password)) {
+    private Authentication checkPassword(CustomUserDetail user, String rawPassword, PasswordEncoder encoder) {
+
+        if (encoder.matches(rawPassword, user.getPassword())) {
             return new UsernamePasswordAuthenticationToken(user, user.getPassword(), user.getAuthorities());
         }
 
