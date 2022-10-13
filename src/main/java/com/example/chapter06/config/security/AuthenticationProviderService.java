@@ -35,6 +35,8 @@ public class AuthenticationProviderService implements AuthenticationProvider {
                 return checkPassword(user, password, bCryptPasswordEncoder);
             case SCRYPT:
                 return checkPassword(user, password, sCryptPasswordEncoder);
+            default:
+                throw new BadCredentialsException("Bad credentials");
         }
 
         throw new BadCredentialsException("Bad credentials");
