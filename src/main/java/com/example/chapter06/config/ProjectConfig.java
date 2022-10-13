@@ -19,15 +19,6 @@ public class ProjectConfig {
     private final AuthenticationProviderService authenticationProvider;
 
 
-    @Bean
-    public BCryptPasswordEncoder bCryptPasswordEncoder() {
-        return new BCryptPasswordEncoder();
-    }
-
-    @Bean
-    public SCryptPasswordEncoder sCryptPasswordEncoder() {
-        return new SCryptPasswordEncoder();
-    }
 
     @Bean
     public AuthenticationManager authenticationManager(HttpSecurity http) throws Exception {
