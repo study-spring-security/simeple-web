@@ -1,7 +1,7 @@
 package com.example.chapter06.config.security;
 
-import com.example.chapter06.config.entity.User;
-import com.example.chapter06.repository.UserRepository;
+import com.example.chapter06.user.entity.User;
+import com.example.chapter06.user.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;

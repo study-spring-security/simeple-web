@@ -1,4 +1,4 @@
-package com.example.chapter06.config.entity;
+package com.example.chapter06.product.entity;
 
 import javax.persistence.*;
 

@@ -1,6 +1,6 @@
-package com.example.chapter06.repository;
+package com.example.chapter06.user.repository;
 
-import com.example.chapter06.config.entity.User;
+import com.example.chapter06.user.entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;

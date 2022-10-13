@@ -1,5 +1,6 @@
-package com.example.chapter06.config.entity;
+package com.example.chapter06.user.entity;
 
+import com.example.chapter06.config.security.EncryptionAlgorithm;
 import lombok.Getter;
 import lombok.Setter;
 

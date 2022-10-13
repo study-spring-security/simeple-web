@@ -1,6 +1,6 @@
 package com.example.chapter06.config.security;
 
-import com.example.chapter06.config.entity.User;
+import com.example.chapter06.user.entity.User;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
