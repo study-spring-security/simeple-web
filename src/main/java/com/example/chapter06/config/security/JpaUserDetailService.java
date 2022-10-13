@@ -3,8 +3,6 @@ package com.example.chapter06.config.security;
 import com.example.chapter06.config.entity.User;
 import com.example.chapter06.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
-import lombok.val;
-import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
@@ -13,7 +11,7 @@ import java.util.function.Supplier;
 
 @Service
 @RequiredArgsConstructor
-public class JapUserDetailService implements UserDetailsService {
+public class JpaUserDetailService implements UserDetailsService {
 
     private final UserRepository userRepository;
 
